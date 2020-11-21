@@ -1,2 +1,5 @@
 /audio
 /__pycache__
+/cython
+/fairseq
+/model

@@ -3,7 +3,7 @@ import math
 import os
 
 def sample_change(filename,sample_rate,dest):
-    dest = os.path.join(dest,'8K_'+os.path.basename(filename))
+    dest = os.path.join(dest,'16_'+os.path.basename(filename))
     sound = AudioSegment.from_file(filename)
     sound = sound.set_frame_rate(sample_rate)
     sound.export(dest,format="wav")
