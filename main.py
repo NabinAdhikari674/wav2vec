@@ -64,8 +64,6 @@ def train_model(trainer,manifest_path,model_path):
 
 
 def main():
-    print("\n\t ## Wav2Vec v 0.1 \n")
-
     base = os.getcwd()
     audio_path = os.path.join(base,'audio')
     sampled_path = os.path.join(audio_path,'SampledAudio')
@@ -89,6 +87,7 @@ def main():
 
 
 if __name__ == "__main__":
+    print("\n\t ## Wav2Vec v 0.1 by NabinAdhikari674\n")
     main()
 
         

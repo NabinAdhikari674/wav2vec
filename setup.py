@@ -8,7 +8,7 @@ def git_clone_repo():
     git_cython = 'https://github.com/cython/cython.git'
 
     for git_link in [git_cython]:
-        print(" Cloning from : ",git_link)
+        print(" > Cloning from : ",git_link)
         cmd = 'git clone {}'.format(git_link)
         subprocess.run(cmd)
 
@@ -28,6 +28,8 @@ def install_requirements():
     cmd = 'pip install -r requirements.txt'
     subprocess.run(cmd)
 
-git_clone_repo()
-install_editable()
-install_requirements()
+if '__name__'=='__main__':
+    print("\n\t## Setup For wav2vec v0.1 by NabinAdhikari674 \n")
+    git_clone_repo()
+    install_editable()
+    install_requirements()
