@@ -23,4 +23,5 @@ installation of fairseq. But this solution may not work for all.
 Another solution may be `pip install fairseq --no-binary :all:`, but this may not work for all.
 Another solution may be `pip install fairseq --no-use-pep517` during its installation. But this also doesnot work for all.
 Likewise one can encounter many other problems while installing fairseq on Windows.
+
 But installation on Linux may not have such problems at all.

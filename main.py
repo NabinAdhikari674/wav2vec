@@ -87,7 +87,7 @@ def main():
 
 
 if __name__ == "__main__":
-    print("\n\t ## Wav2Vec v 0.1 by NabinAdhikari674\n")
+    print("\n\t\t ## Wav2Vec v 0.1 by NabinAdhikari674\n")
     main()
 
         
