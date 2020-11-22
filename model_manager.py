@@ -1,9 +1,6 @@
-#from fairseq.models.wav2vec import Wav2VecModel
-#import torch
-#import torchaudio
-torchaudio=1
-torch=1
-Wav2VecModel = 1
+from fairseq.models.wav2vec import Wav2VecModel
+import torch
+import torchaudio
 
 class Model():
     def __init__(self):

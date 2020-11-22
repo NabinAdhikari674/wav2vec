@@ -36,7 +36,7 @@ def create_manifest(generator,audio_path,manifest_path):
     print("\n>> Creating Manifest Files for Training ... ")
     generator = os.path.join(generator,'wav2vec_manifest.py')
     cmd = 'python {} {} --dest {} --ext wav --valid-percent 0.01'.format(generator,audio_path,manifest_path)
-    subprocess.run(cmd)
+    subprocess.run(cmd,shell=True)
     print("\t Manifest Created in : ",manifest_path)
 
 def train_model(trainer,manifest_path,model_path):
@@ -60,7 +60,7 @@ def train_model(trainer,manifest_path,model_path):
     cmd += ' --warmup-init-lr 1e-07 --criterion wav2vec --num-negatives 10 --max-sample-size 150000'
     cmd += ' --max-tokens 1500000 --skip-invalid-size-inputs-valid-test'
 
-    subprocess.run(cmd)
+    subprocess.run(cmd,shell=True)
 
 
 def main():
